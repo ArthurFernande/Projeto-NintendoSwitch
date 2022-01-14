@@ -57,8 +57,9 @@ next.addEventListener('click', ()=>{
     slide()
 })
 function slide(){
+    
     if(atual >= quant.length){
-        atual=0;
+        atual = 0;
     }
     else if(atual < 0 ) {
         atual = quant.length-1
@@ -75,4 +76,4 @@ setInterval(()=>{
     else {
         rolar = true
     }
-},6000)
+},9000)

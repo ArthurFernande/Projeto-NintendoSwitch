@@ -11,6 +11,19 @@ body{
     font-size: 13px;
     overflow-x: hidden ;
 }
+/*item que vao servir para tudo*/
+.button{
+    background-color: #B28756;
+    text-transform: uppercase;
+    color: #FFF;
+    font-size:12px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+    border: 0;
+}
 
 /* -----> cabecalho<-------*/
 .cabecalho {
@@ -32,7 +45,7 @@ body{
     height: 100px;
 }
 .logoimg{
-    background-image: url("../images/logo.png");
+    background-image: url("../images/desktop/logo.png");
     width: 90px;
     height: 90px;
     background-position: center;
@@ -70,8 +83,55 @@ body{
 }
 /*parte do banner*/
 
+/*melhorando imagens para ficar como fundo do banner*/
+.image-area1 {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../images/desktop/switch1.jpg");
+    height: calc(100vh - 100px);
+    width: 100vw;
+    background-size: cover;     /*ocupa toda a tela sem distorecer a imagem*/
+    background-position:center; /*centraliza imagem*/
+    background-attachment: fixed; /*a imagem fica fixa a dar scroll na tela*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.image-area2 {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../images/desktop/galera.jpg");
+    height: calc(100vh - 100px);
+    width: 100vw;
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image-area3{
+    background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../images/desktop/litle3.jpg");
+    height: calc(100vh - 100px);
+    width: 100vw;
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image-area4{
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../images/desktop/galera2.jpg");
+    height: calc(100vh - 100px);
+    width: 100vw;
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*ajustando banner*/
 .banner {
-    background-color: red;
     color: #FFF;
     display:flex;
     justify-content: center;
@@ -82,55 +142,24 @@ body{
 .slide{
     width: 100vw;
     height: calc(100vh - 100px);
-    border: 1px solid #000;
     overflow: hidden;
     transition:all 0.4s;
-    
+   
 }
 .slides{
     width:600%;
     display: flex;
 }
-/*melhorando imagens para ficar como fundo do banner*/
-
-.image-area1 {
-    background-image: url("../images/switch.jpg");
-    height: calc(100vh - 100px);
-    width: 100vw;
-    background-size: cover;
-    background-position:center;
-}
-.image-area2 {
-    background-image: url("../images/litle.jpg");
-    height: calc(100vh - 100px);
-    width: 100vw;
-    background-size: cover;
-    background-position:center;
-}
-.image-area3{
-    background-image: url("../images/NintendoSwitch.jpg");
-    height: calc(100vh - 100px);
-    width: 100vw;
-    background-size: cover;
-    background-position:center;
-}
-.image-area4{
-    background-image: url("../images/osdois.jpg");
-    height: calc(100vh - 100px);
-    width: 100vw;
-    background-size: cover;
-    background-position:center;
-}
 
 #atual{
-    transition: all 2s;
+    transition: all 0s;
 }
 .btn{
     position: absolute;
     color: #FFF;
     padding: 20px;
     text-align: center;
-    display: none;
+    display: none; /*para ativar setas do lado so remover essa linha*/
     align-items: center;
     justify-content: center;
     cursor:pointer;
@@ -158,19 +187,38 @@ body{
 }
 .balls div {
     transition: all 0.5s;
-    border: 3px solid red;
+    border: 3px solid #B28756;
     padding: 6px;
     border-radius: 50%;
     margin-right: 15px;
     cursor: pointer;
 }
 .balls div:hover{
-    background-color: red;
+    background-color: #B28756;
 }
 .imgAtual{
     transition:all 0.5s;
-    background-color: red;
+    background-color: #B28756;
 }
+.slide--image-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.slide--image-area h1{
+  text-transform: uppercase;  
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 80px;
+}
+.slide--image-area h1 span {
+    color:#B28756;
+}
+
+
+
+
 
 
 
@@ -287,6 +335,14 @@ body{
         color:#B28756;
     }
     /*---------parte do banner------------*/
+    .image-area2 {
+       background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../images/mobile/galeraT.jpg");
+    }
+    .image-area4 {
+        background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../images/mobile/galera2T.jpg");
+        background-position: top;
+     }
+
 
 }
 
@@ -346,5 +402,26 @@ body{
     .menu .menu-item-action:hover{
         color:#B28756;
     }
+     /*---------parte do banner------------*/
     
+
+    .image-area1 {
+        background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../images/mobile/switch.jpg");
+
+    }
+    .image-area2 {
+        background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../images/mobile/galera.jpg");
+    }
+    .image-area3 {
+        background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../images/mobile/litle3.jpg");
+    }
+    .image-area4 {
+        background-image:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../images/mobile/galera2.jpg");
+    }
+    .slide--image-area h1 {
+        font-size:27px;
+    }
+
+   
+     
 }
