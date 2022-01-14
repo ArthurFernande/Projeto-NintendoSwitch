@@ -12,7 +12,7 @@
 </p>
 
 # Sobre 📖
-<p> O projeto está sendo feito seguindo um modelo de outro projeto que  foi realizado apartir do curso <a href="https://b7web.com.br/fullstack/"> B7Web </a> oferecido por           <a href="https://www.instagram.com/bonieky/"> Bonieky Lacerda </a>, ele foi feito com o intuito de aprendizado para estimular o conhecimento em desenvolvimento web.</p>
+<p> O projeto está sendo feito seguindo um modelo de outro projeto que  foi realizado apartir do curso <a href="https://b7web.com.br/fullstack/"> B7Web </a> oferecido por           <a href="https://www.instagram.com/bonieky/"> Bonieky Lacerda </a>, com um foco de  melhorar o projeto.</p>
 
 <p>O que está sendo  aprendido : </p>
 <ul>
