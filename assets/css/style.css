@@ -24,6 +24,52 @@ body{
     border-radius: 20px;
     border: 0;
 }
+.bar {
+    width: 200px;
+    height: 20px;
+}
+.bar.color{
+    background-color: #B28756;
+}
+.bar.ligth{
+    background-color: #A52A2A;
+}
+.default{
+    width: 100vw;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.default .section-title,
+.default .section-desc {
+    text-align:center;
+    text-transform: uppercase;
+    font-weight:600;
+}
+.default .section-title{
+    font-size:20px;
+}
+.default .section-desc{ 
+    font-size:12px;
+    color:#B28756;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.default.ligth {
+    background-color: #FFF;
+}
+.default.ligth .section-title,
+.default.ligth .section-body {
+    color:#A52A2A;
+}
+.default.color{
+    background-color: #A52A2A;
+}
+.default.color .section-title,
+.default.color .section-body {
+    color:#FFF;
+}
+
 
 /* -----> cabecalho<-------*/
 .cabecalho {
@@ -215,6 +261,9 @@ body{
 .slide--image-area h1 span {
     color:#B28756;
 }
+/*parte do about Us*/
+
+
 
 
 
